@@ -1,0 +1,26 @@
+{
+  "name": "rooker",
+  "version": "1.0.0",
+  "description": "A HOC for Google Analytics",
+  "main": "rooker.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com/jordanmcrae/rooker"
+  },
+  "keywords": [
+    "Google",
+    "Analytics",
+    "GA",
+    "HOC",
+    "React",
+    "ReactJS"
+  ],
+  "author": "Jordan McRae",
+  "license": "ISC",
+  "dependencies": {
+    "create-react-class": "^15.6.3",
+    "lodash": "^4.17.5",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}
