@@ -8,13 +8,13 @@ Rooker is a lightweight Google Analytics wrapper for React components. Quickly c
 ### Usage / Example
 Rooker is completely opt-in. You can wrap your entire React application with Rooker to add event handlers throughout your entire app, or simply wrap a single component and separate concerns.
 
-1) ` import { createFruit } from './Rooker';`
+1) ` import { Rooker } from './Rooker';`
 2) Write your configuration to include the elements you want to track (see config options below).
 3) Wrap your configuration in Rooker with your component.
 
 ```
 import React, { Component } from 'react';
-import { createFruit } from './Rooker';
+import { Rooker } from './Rooker';
 
 const config = {
 	defaults: {
