@@ -3,9 +3,9 @@ const ReactDOM    = require('react-dom');
 const createClass = require('create-react-class');
 const _           = require('lodash');
 const gaConfig    = require('./gaConfig.js');
-let   userConfig  = {};
+const userConfig  = {};
 let   DOMContext  = [];
-const seeds       = [];
+let   seeds       = [];
 
 const Rooker = {
 	Initialize: function(config) {
@@ -53,21 +53,21 @@ const Rooker = {
 	},
 	Rooker : function(config, Child) {
 		return createClass({
-			componentWillMount() {
+			componentWillMount: function() {
 				Rooker.Initialize(config);
 			},
-			componentDidMount() {
+			componentDidMount: function() {
 				DOMContext = ReactDOM.findDOMNode(this).getElementsByTagName('*');
 				Rooker.ProcessHooks(config);
 			},
-			componentWillUnmount() {
+			componentWillUnmount: function() {
 				Rooker.RemoveHooks(config);
 			},
-			render() {
-				return <React.Fragment><Child/></React.Fragment>;
+			render: function() {
+				return React.createElement(Child);				
 			}
 		});
 	}
-}
+};
 
 module.exports = Rooker;
