@@ -43,7 +43,7 @@ class App extends Component {
         <header className="App-header">
             <h3>My App</h3>
         </header>
-		<button className='trackMe'>Track My Clicks!</button>
+	<button className='trackMe'>Track My Clicks!</button>
         <a href='/' id='trackMeToo'>Track My Clicks Too!</a>
         <span>Track My Clicks</span>
         <span>Track My Clicks</span>
